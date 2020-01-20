@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:redux-saga/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "arrowFunctions": true,
+      "generators": true,
+      "destructuring": true,
+      "spread": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier",
+    "redux-saga"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "react/jsx-curly-newline": 0,
+    "global-require": 0,
+    "react/destructuring-assignment": [
+      0,
+      {
+        "ignoreClassFields": false
+      }
+    ],
+    "prettier/prettier": "error",
+    "semi": [
+      2,
+      "never"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
+  }
+}
