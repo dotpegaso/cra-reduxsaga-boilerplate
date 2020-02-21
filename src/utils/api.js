@@ -5,7 +5,7 @@ const config = {
   token: '',
   baseUrl: process.env.URL,
   url: `${process.env.URL}/api`,
-  serviceUrl: 'http://173.82.206.183'
+  serviceUrl: ''
 }
 // const COOKIES = new Cookies()
 
@@ -25,7 +25,7 @@ const api = call => {
       'Content-Type': 'application/json',
       Accept: 'application/json',
       'Root-Key':
-        'DzfgVuPuWvYUfweeDt5c8gTUh7Q4jkv8n2DqN4Kya8xY4Ytg2T56tXMra59NQu2V',
+        '',
       Platform: 'Web'
     }
 
